@@ -1,0 +1,332 @@
+* {  
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box; /* Limitar tamanho de todas as caixas contando padding e margin */
+}
+
+:root {
+    --amarelo: #F2B62C;
+    --laranja: #F86D31;
+    --verde: #159871;
+    --azul: #084CAD;
+    --roxo: #D297C4;
+    --cinza-medio: #E2E2E2;
+    --cinza-escuro: #16162A;
+    --cinza-claro: #FCFCFC;
+}
+
+body {
+    background-color: var(--cinza-claro);
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 135%;
+}
+
+header {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    width: 100%;
+    background-color: var(--cinza-claro);
+    z-index: 100;
+}
+
+nav.menu-topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    max-width: 900px;
+
+    font-weight: 600;
+    font-size: 1.3em;    
+}
+
+div.linha-menu-topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* LINHA COLORIDA DO MENU NO TOPO */
+div.linha-menu-topo > div {
+    height: 3px;
+    width: 100%;    
+}
+
+div.linha-menu-topo > div.amarelo {
+    background-color: var(--amarelo);
+}
+
+div.linha-menu-topo > div.azul {
+    background-color: var(--azul);
+}
+
+div.linha-menu-topo > div.verde {
+    background-color: var(--verde);
+}
+
+div.linha-menu-topo > div.laranja {
+    background-color: var(--laranja);
+}
+
+/* SEÇÃO DE APRESENTAÇÃO */
+
+section.apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 230px auto 200px auto;
+    gap: 40px;
+}
+
+section.apresentacao .nome > p {
+    font-size: 6rem;
+    font-weight: 600;    
+}
+
+div.nome {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+div.blocos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+    
+}
+
+div.blocos > p {
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    color: var(--cinza-claro);
+    font-weight: 300;
+}
+
+div.blocos .bloco-jd {
+    background-color: var(--amarelo);
+    width: 84%;
+}
+
+div.blocos .bloco-py {
+    background-color: var(--azul);
+}
+
+div.blocos .bloco-ui {
+    background-color: var(--verde);
+    width: 45%; 
+    
+}
+
+div.blocos .bloco-wb {
+    background-color: var(--laranja);
+    width: 76%;
+}
+
+
+/* LINHA COLORIDA SOBRE */
+
+div.linha-sobre {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    
+}
+
+div.linha-sobre > div {
+    height: 8px;
+    width: 100%;   
+}
+
+div.linha-sobre > div.amarelo {
+    background-color: var(--amarelo);
+}
+
+div.linha-sobre > div.azul {
+    background-color: var(--azul);
+}
+
+div.linha-sobre > div.verde {
+    background-color: var(--verde);
+}
+
+div.linha-sobre > div.laranja {
+    background-color: var(--laranja);
+}
+
+section.sobre {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    
+    gap: 20px;
+}
+
+
+section.sobre img {    
+   max-width: 250px;
+   border-radius: 999px;
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+
+section.sobre .texto > p {    
+    max-width: 750px;
+    margin-bottom: 30px;    
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 130%;
+    text-align: center;
+}
+
+
+h2 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 135%;
+    text-align: center;    
+}
+
+section.projetos > h2 {
+    margin-top: 50px;
+}
+
+section.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+section.projetos .menu-projetos .blocos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 40px;
+
+}
+
+section.projetos .menu-projetos .blocos > p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+section.projetos .menu-projetos .blocos .bloco-jd {
+    width: 27%;
+}
+
+section.projetos .menu-projetos .blocos .bloco-py {
+    width: 33%;
+}
+
+section.projetos .menu-projetos .blocos .bloco-ui {
+    width: 15%;
+}
+
+section.projetos .menu-projetos .blocos .bloco-wb {
+    width: 25%;
+}
+
+section.projetos div.lista-projetos .projetos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+section.projetos div.lista-projetos .projetos > .container {
+    max-width: 450px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imagem blocos"
+                         "imagem titulo"
+                         "imagem titulo"
+                         "imagem descricao"
+                         "imagem descricao"
+                         "imagem descricao"
+                         "imagem descricao";
+    column-gap: 20px;
+    row-gap: 0px;
+     
+}
+
+section.projetos div.lista-projetos .projetos .container > .imagem {
+    max-width: 250px;
+    height: 290px;
+    overflow: hidden;
+    grid-area: imagem;    
+}
+
+.imagem > img {
+    max-width: 100%;
+    height: 100%;
+    transition: transform 0.45s;
+}
+
+
+.imagem:hover > img {
+    transform: scale(1.1);
+}
+
+
+
+
+section.projetos div.lista-projetos .projetos .container .blocos {
+    grid-area: blocos;
+    display: flex;
+    flex-direction: row;
+    margin-right: 55px;
+}
+
+section.projetos div.lista-projetos .projetos .container h3 {
+    grid-area: titulo;
+    font-size: 2rem;
+    line-height: 1.9rem;
+}
+
+section.projetos div.lista-projetos .projetos .container p {
+    grid-area: descricao;
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+#jd, #py, #ui, #wb {
+    height: 20px;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1px 1px;
+    text-align: center;    
+}
+
+div.ver-mais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+div.ver-mais > img {
+    width: 15px;
+}
+
+div.ver-mais > p {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
