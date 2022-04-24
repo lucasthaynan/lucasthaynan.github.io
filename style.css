@@ -16,6 +16,14 @@
     --cinza-claro: #FCFCFC;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 3.5em;
+}
+
 body {
     background-color: var(--cinza-claro);
 
@@ -270,14 +278,14 @@ section.projetos div.lista-projetos .projetos .container > .imagem {
     grid-area: imagem;    
 }
 
-.imagem > img {
+.imagem a > img {
     max-width: 100%;
     height: 100%;
     transition: transform 0.45s;
 }
 
 
-.imagem:hover > img {
+.imagem a:hover > img {
     transform: scale(1.1);
 }
 
