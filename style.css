@@ -219,7 +219,7 @@ section.habilidades > p {
     font-weight: 300;
     font-size: 1.3rem;
     line-height: 130%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 
@@ -368,7 +368,7 @@ div.ver-mais {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 40px;
+    margin: 40px 40px 0px 40px;
 }
 
 div.ver-mais > img {
@@ -390,7 +390,7 @@ section.habilidades {
     display: flex;
     flex-direction: column;    
     align-items: center;
-    margin-top: 30px;
+    padding-top: 90px;
     gap: 20px;
 }
 
@@ -504,7 +504,8 @@ section.contato {
     align-items: center;
 }
 section.contato p.texto-contato {
-    margin-top: 100px;
+    margin-top: 120px;
+    text-align: center;
 }
 
 section.contato p.email {
@@ -515,7 +516,7 @@ section.contato div.redes {
     display: flex;
     flex-direction: row;
     gap: 45px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 section.contato div.redes > a {
