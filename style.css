@@ -318,12 +318,12 @@ section.projetos div.lista-projetos .projetos > .container {
 
 section.projetos div.lista-projetos .projetos .container > .imagem {
     max-width: 250px;
-    height: 290px;
+    height: 270px;
     overflow: hidden; 
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     align-content: center;
 
@@ -351,8 +351,8 @@ section.projetos div.lista-projetos .projetos .container .blocos {
 }
 
 section.projetos div.lista-projetos .projetos .container h3 {
-    font-size: 1.8rem;
-    line-height: 1.9rem;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
 }
 
 section.projetos div.lista-projetos .projetos .container p {
