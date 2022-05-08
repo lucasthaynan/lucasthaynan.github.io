@@ -321,11 +321,17 @@ section.projetos div.lista-projetos .projetos .container > .imagem {
     height: 290px;
     overflow: hidden; 
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
 }
 
 .imagem a > img {
     width: auto;
-    height: 100%;
+    height: 290px;
 
     transition: transform 0.45s;
 }
@@ -345,7 +351,7 @@ section.projetos div.lista-projetos .projetos .container .blocos {
 }
 
 section.projetos div.lista-projetos .projetos .container h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.9rem;
 }
 
