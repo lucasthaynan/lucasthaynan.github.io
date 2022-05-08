@@ -709,6 +709,23 @@ section.contato .linha-sobre {
     }
 
 
+    div.lista-ferramentas {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    section.contato div.redes {
+        margin: auto 70px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px
+    }
+
+    section.contato .linha-sobre {
+        margin-top: 50px;
+    }
+
+
 
 
 }
