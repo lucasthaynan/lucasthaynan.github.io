@@ -24,6 +24,26 @@ html {
     scroll-margin-top: 3.5em;
 }
 
+/* unvisited link */
+a:link {
+    color: var(--cinza-escuro);
+}
+  
+  /* visited link */
+a:visited {
+    color: rgba(57, 57, 57, 0.4);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgba(57, 57, 57, 0.4);
+}
+
+/* selected link */
+a:active {
+    color: rgba(57, 57, 57, 0.4);
+}
+
 body {
     background-color: var(--cinza-claro);
 
@@ -105,10 +125,14 @@ div.nome {
     align-items: flex-end;
 }
 
-div.blocos {
+section.apresentacao .blocos > p {
+    margin: 10px 0;
+}
+
+.infos-projeto div.blocos {
     display: flex;
     flex-direction: column;
-    gap: 10px;   
+    gap: 10px;       
     
 }
 
@@ -185,8 +209,9 @@ section.sobre img {
    margin-top: 60px;
    margin-bottom: 30px;
 }
-
-section.sobre .texto > p {    
+section.contato > p,
+section.sobre .texto > p,
+section.habilidades > p {    
     max-width: 750px;
     margin-bottom: 30px;    
     font-weight: 300;
@@ -256,9 +281,27 @@ section.projetos div.lista-projetos .projetos {
 section.projetos div.lista-projetos .projetos > .container {
     max-width: 450px;
     height: 300px;
+    display: flex;
+    flex-direction: row;
+    
+     
+}
+
+.infos-projeto {
+    width: 200px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+/* 
+section.projetos div.lista-projetos .projetos > .container {
+    max-width: 450px;
+    height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "imagem blocos"
                          "imagem titulo"
                          "imagem titulo"
@@ -269,18 +312,19 @@ section.projetos div.lista-projetos .projetos > .container {
     column-gap: 20px;
     row-gap: 0px;
      
-}
+} */
 
 section.projetos div.lista-projetos .projetos .container > .imagem {
     max-width: 250px;
     height: 290px;
-    overflow: hidden;
-    grid-area: imagem;    
+    overflow: hidden; 
+
 }
 
 .imagem a > img {
-    max-width: 100%;
+    width: auto;
     height: 100%;
+
     transition: transform 0.45s;
 }
 
@@ -293,30 +337,28 @@ section.projetos div.lista-projetos .projetos .container > .imagem {
 
 
 section.projetos div.lista-projetos .projetos .container .blocos {
-    grid-area: blocos;
     display: flex;
     flex-direction: row;
     margin-right: 55px;
 }
 
 section.projetos div.lista-projetos .projetos .container h3 {
-    grid-area: titulo;
     font-size: 2rem;
     line-height: 1.9rem;
 }
 
 section.projetos div.lista-projetos .projetos .container p {
-    grid-area: descricao;
     font-size: 1rem;
     line-height: 1.1rem;
 }
 
-#jd, #py, #ui, #wb {
+section.projetos div.lista-projetos .projetos .container .infos-projeto .blocos .icone {
     height: 20px;
-    width: 100%;
-    font-size: 1rem;
+    width: 40px;
+    font-size: 0.9rem;
     padding: 1px 1px;
-    text-align: center;    
+    text-align: center;   
+
 }
 
 div.ver-mais {
@@ -338,3 +380,243 @@ div.ver-mais > p {
     margin-left: 15px;
 }
 
+
+
+/* HABILIDADES */
+
+section.habilidades {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+
+div.lista-ferramentas {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    column-gap: 125px;
+    align-content: center;
+
+}
+
+div.ferramenta {
+    width: 250px;
+    margin: 12px auto;
+}
+
+div.ferramenta > p {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.barra-preenchida {
+    height: 13px;
+    background-color: blue;
+} 
+
+
+div.barra-progresso {
+    background-color: #E2E2E2;
+}
+
+.barra-preenchida.verde {
+    background-color: var(--verde);
+}
+
+.barra-preenchida.azul {
+    background-color: var(--azul);
+}
+
+.barra-preenchida.amarelo {
+    background-color: var(--amarelo);
+}
+
+.barra-preenchida.laranja {
+    background-color: var(--laranja);
+}
+
+/* barra de progresso de cada ferramenta/habilidade */
+
+.illustrator .barra-progresso .barra-preenchida {
+    width: 90%;
+}
+
+.photoshop .barra-progresso .barra-preenchida {
+    width: 70%;
+}
+
+.figma .barra-progresso .barra-preenchida {
+    width: 85%;
+}
+
+.adobe-xd .barra-progresso .barra-preenchida {
+    width: 30%;
+}
+
+
+.html .barra-progresso .barra-preenchida {
+    width: 85%;
+}
+
+.css .barra-progresso .barra-preenchida {
+    width: 65%;
+}
+
+.javascript .barra-progresso .barra-preenchida {
+    width: 30%;
+}
+
+.vue-js .barra-progresso .barra-preenchida {
+    width: 10%;
+}
+
+.python .barra-progresso .barra-preenchida {
+    width: 65%;
+}
+
+.github .barra-progresso .barra-preenchida {
+    width: 70%;
+}
+
+.google-sheets .barra-progresso .barra-preenchida {
+    width: 80%;
+}
+
+.flourish-datawrapper .barra-progresso .barra-preenchida {
+    width: 90%;
+}
+
+
+section.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.contato p.texto-contato {
+    margin-top: 100px;
+}
+
+section.contato p.email {
+    font-weight: 500;
+}
+
+section.contato div.redes {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-bottom: 50px;
+}
+
+section.contato div.redes > a {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: underline;    
+}
+
+section.contato .linha-sobre {
+    margin-bottom: 120px;
+}
+
+/*  RESPOSIVIDADE */
+
+@media (max-width: 830px) {
+
+    nav.menu-topo {
+        margin: 30px 40px;
+    }
+
+    section.apresentacao {
+        margin: 230px 20px 200px 20px;  
+        gap: 20px;      
+    }
+
+    section.apresentacao div.nome > p {
+        font-size: 4.5rem;
+    }
+
+    section.apresentacao div.blocos > p {
+        font-size: 1.2rem;
+    }
+
+    section.apresentacao div.blocos .bloco-ui {
+        width: 50%;
+    }
+
+    section.apresentacao div.blocos .bloco-wb {
+        width: 80%;
+    }
+
+
+
+
+    section.sobre img {
+        max-width: 225px;
+    }
+
+
+    section.contato > p, 
+    section.sobre .texto > p, 
+    section.habilidades > p {
+        font-size: 1.2rem;
+        margin-left: 40px;
+        margin-right: 40px;;
+    }
+
+    
+  
+
+
+}
+
+@media (max-width: 1040px) {
+
+    section.projetos .menu-projetos .blocos {
+        gap: 12px;
+        margin: auto 15px;
+    }
+
+    section.projetos div.menu-projetos div.blocos > p {
+        font-size: 1rem;
+    }
+
+    section.projetos div.lista-projetos .projetos {
+        justify-content: center;
+
+    }
+
+    div.lista-ferramentas {
+        column-gap: 30px;
+        margin: auto 20px;;
+    }
+
+    div.barra-progresso {
+        width: 100%;
+    }
+
+    div.ferramenta {
+        width: 200px;
+    }
+
+    div.ferramenta > p {
+        font-size: 1rem;
+    }
+}
+
+/* @media (max-width: 780px) {
+
+    section.projetos .menu-projetos .blocos {
+        gap: 12px;
+        margin: auto 15px;
+    }
+
+} */
