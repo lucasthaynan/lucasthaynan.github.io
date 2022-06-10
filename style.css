@@ -222,6 +222,33 @@ section.habilidades > p {
     /* text-align: center; */
 }
 
+a > h3 {
+    color: black;
+}
+
+/* section.sobre span.jd {
+    text-decoration: underline var(--amarelo);
+    text-decoration-thickness: 3px;
+}
+
+section.sobre span.ui {
+    text-decoration: underline var(--verde);
+    text-decoration-thickness: 3px;
+}
+
+section.sobre span.py {
+    text-decoration: underline var(--azul);
+    text-decoration-thickness: 3px;
+}
+
+section.sobre span.wb {
+    text-decoration: underline var(--laranja);
+    text-decoration-thickness: 3px;
+} */
+
+
+
+
 
 h2 {
     font-weight: 600;
