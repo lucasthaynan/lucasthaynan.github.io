@@ -36,9 +36,17 @@ a:visited {
     color: rgba(57, 57, 57, 0.4);
 }
 
+a {
+    transition: all 0.3s;
+}
+
+a > h3 {
+    color: black;
+}
+
 /* mouse over link */
 a:hover {
-    color: rgba(57, 57, 57, 0.4);
+    color: rgba(43, 43, 43, 0.559);
 }
 
 /* selected link */
@@ -222,9 +230,7 @@ section.habilidades > p {
     /* text-align: center; */
 }
 
-a > h3 {
-    color: black;
-}
+
 
 /* section.sobre span.jd {
     text-decoration: underline var(--amarelo);
@@ -482,7 +488,7 @@ div.barra-progresso {
 /* barra de progresso de cada ferramenta/habilidade */
 
 .illustrator .barra-progresso .barra-preenchida {
-    width: 90%;
+    width: 85%;
 }
 
 .photoshop .barra-progresso .barra-preenchida {
@@ -490,7 +496,7 @@ div.barra-progresso {
 }
 
 .figma .barra-progresso .barra-preenchida {
-    width: 85%;
+    width: 80%;
 }
 
 .adobe-xd .barra-progresso .barra-preenchida {
@@ -499,7 +505,7 @@ div.barra-progresso {
 
 
 .html .barra-progresso .barra-preenchida {
-    width: 85%;
+    width: 75%;
 }
 
 .css .barra-progresso .barra-preenchida {
@@ -519,7 +525,7 @@ div.barra-progresso {
 }
 
 .github .barra-progresso .barra-preenchida {
-    width: 70%;
+    width: 55%;
 }
 
 .google-sheets .barra-progresso .barra-preenchida {
