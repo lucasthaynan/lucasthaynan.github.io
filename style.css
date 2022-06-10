@@ -480,15 +480,15 @@ div.barra-progresso {
 }
 
 .javascript .barra-progresso .barra-preenchida {
-    width: 30%;
+    width: 45%;
 }
 
-.vue-js .barra-progresso .barra-preenchida {
-    width: 10%;
+.api .barra-progresso .barra-preenchida {
+    width: 50%;
 }
 
 .python .barra-progresso .barra-preenchida {
-    width: 65%;
+    width: 70%;
 }
 
 .github .barra-progresso .barra-preenchida {
