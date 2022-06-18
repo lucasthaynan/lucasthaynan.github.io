@@ -287,6 +287,7 @@ section.projetos .menu-projetos .blocos {
 section.projetos .menu-projetos .blocos > p {
     font-size: 1.3rem;
     text-align: center;
+    cursor: pointer;
 }
 
 section.projetos .menu-projetos .blocos .bloco-jd {
@@ -312,15 +313,19 @@ section.projetos div.lista-projetos .projetos {
     justify-content: space-between;
     gap: 30px;
     margin-top: 10px;
+    transition: 0.3s;
 }
 
 section.projetos div.lista-projetos .projetos > .container {
     max-width: 500px;
     height: 300px;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;      
      
+}
+
+#list-projects .container.desativo {
+    display: none;
 }
 
 .infos-projeto {
