@@ -441,13 +441,14 @@ section.habilidades {
 
 
 div.lista-ferramentas {
-    height: 260px;
+    height: 345px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 1000px;
-    column-gap: 125px;
-    align-content: center;
+    width: 960px;
+    column-gap: 100px;
+    align-content: space-between;
 
 }
 
@@ -461,6 +462,81 @@ div.ferramenta > p {
     font-style: normal;
     font-weight: 500;
     margin-bottom: 5px;
+}
+
+
+div.container-indice {
+    width: 960px;
+    background-color: #F2F2F2;
+    padding: 30px 100px 30px 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+.explicacao-indice {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pouco-confortavel,
+.muito-confortavel {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 0.8rem;
+    text-align: right;
+    gap: 10px;
+}
+
+.pouco-confortavel > .container-circulos,
+.muito-confortavel > .container-circulos {
+    gap: 6px;
+}
+
+.pouco-confortavel .container-circulos > .circulo,
+.muito-confortavel .container-circulos .circulo{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+div.container-circulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.container-circulos .circulo {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background-color: #E2E2E2;
+}
+
+div.container-circulos .circulo.verde {
+    background-color: var(--verde);
+}
+
+div.container-circulos .circulo.azul {
+    background-color: var(--azul);
+}
+
+div.container-circulos .circulo.amarelo {
+    background-color: var(--amarelo);
+}
+
+div.container-circulos .circulo.laranja {
+    background-color: var(--laranja);
+}
+
+div.container-circulos .circulo.cinza {
+    background-color: var(--cinza-escuro);
 }
 
 
