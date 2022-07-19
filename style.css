@@ -700,9 +700,19 @@ section.contato .linha-sobre {
 }
 
 @media (max-width: 890px) {
+
     div.lista-ferramentas {
         flex-wrap: nowrap;
         height: auto;
+        width: 80vw;    
+    }
+
+    div.container-indice {
+        max-width: 835px;
+        width: 500px;
+        flex-direction: column;
+        gap: 28px;
+        padding: 30px 20px 20px 30px;
     }
     
 }
@@ -739,7 +749,16 @@ section.contato .linha-sobre {
 
     div.lista-ferramentas {
         column-gap: 30px;
-        margin: auto 20px;;
+        margin: auto 20px;
+        max-width: 835px;
+        
+    }
+
+    div.container-indice {
+        width: 80vw;
+        align-items: center;
+        margin-right: 40px;
+        margin-left: 40px;
     }
 
     div.barra-progresso {
@@ -758,6 +777,14 @@ section.contato .linha-sobre {
 /* MOBILE */
 
 @media (max-width: 480px) {
+
+    div.lista-ferramentas {
+        width: 80vw;
+    }
+
+    div.container-indice {
+        width: 80vw;
+    }
 
     nav.menu-topo {
         display: none;
