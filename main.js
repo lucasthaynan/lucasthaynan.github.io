@@ -1,5 +1,5 @@
 
-
+// script
 let buttonsProjetos = document.querySelectorAll('.menu-projetos .blocos > p.button')
 
 buttonsProjetos.forEach(botao => {
