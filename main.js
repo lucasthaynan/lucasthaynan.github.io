@@ -3,6 +3,8 @@ let btnIngles = document.querySelector('.versao-ingles')
 let btnPortugues = document.querySelector('.versao-portugues')
 
 btnIngles.addEventListener('click', () => {
+    // btnIngles.style.fontWeight = '600'
+    btnIngles.style.color = '#000000'
     traduzirSiteIngles ()
 })
 
@@ -24,6 +26,11 @@ function traduzirSiteIngles () {
     document.querySelector('.blocos .bloco-jd').innerText = 'data journalism'
     document.querySelector('.blocos .bloco-py').innerText = 'python development'
     document.querySelector('.blocos .bloco-wb').innerText = 'web programming'
+
+    // ajustando tamanho dos blocos
+    document.querySelector('div.blocos .bloco-wb').style.width = '90%' 
+    document.querySelector('div.blocos .bloco-ui').style.width = '55%'
+
 
     // tradução do sobre
     document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 5 years of experience in data journalism . In addition, I am an interface designer , Python developer and web programmer (initial phase). I have a degree in Journalism from the Federal University of Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
