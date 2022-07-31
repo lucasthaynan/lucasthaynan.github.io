@@ -75,7 +75,7 @@ header {
 nav.menu-topo {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 30px auto;
     max-width: 900px;
 
@@ -109,6 +109,23 @@ div.linha-menu-topo > div.verde {
 
 div.linha-menu-topo > div.laranja {
     background-color: var(--laranja);
+}
+
+div.traducao {
+    display: flex;
+    flex-direction: row;
+    color: #bbbbbb;
+    gap: 5px;
+    font-weight: 400;
+}
+
+div.traducao .barra {
+    font-weight: 300;
+}
+
+div.traducao .versao-ingles,
+div.traducao .versao-portugues {
+    cursor: pointer;
 }
 
 /* SEÇÃO DE APRESENTAÇÃO */

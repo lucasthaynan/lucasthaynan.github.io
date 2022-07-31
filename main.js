@@ -1,4 +1,48 @@
 
+let btnIngles = document.querySelector('.versao-ingles')
+let btnPortugues = document.querySelector('.versao-portugues')
+
+btnIngles.addEventListener('click', () => {
+    traduzirSiteIngles ()
+})
+
+btnPortugues.addEventListener('click', () => {
+    document.location.reload(true)
+})
+
+
+
+function traduzirSiteIngles () {
+
+    // tradução do header
+    document.querySelector('.menu-topo .sobre').innerText = 'about'
+    document.querySelector('.menu-topo .projetos').innerText = 'projects'
+    document.querySelector('.menu-topo .habilidades').innerText = 'skills'
+    document.querySelector('.menu-topo .contato').innerText = 'contact'    
+
+    // tradução da apresentação
+    document.querySelector('.blocos .bloco-jd').innerText = 'data journalism'
+    document.querySelector('.blocos .bloco-py').innerText = 'python development'
+    document.querySelector('.blocos .bloco-wb').innerText = 'web programming'
+
+    // tradução do sobre
+    document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 5 years of experience in data journalism . In addition, I am an interface designer , Python developer and web programmer (initial phase). I have a degree in Journalism from the Federal University of Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
+
+    document.querySelector('.sobre .texto .paragrafo2').innerText = 'In 2017, I founded the startup Agência Tatu, which develops journalistic products based on public data with a focus on the context of the Northeast region. I won awards with reports and projects aimed at exploring and visualizing data and other photojournalism projects.'
+
+    // tradução dos projetos
+    document.querySelector('section.projetos > h2').innerText = 'my projects'
+    document.querySelector('section.projetos .menu-projetos .blocos .bloco-jd').innerText = 'data journalism'
+    document.querySelector('section.projetos .menu-projetos .blocos .bloco-py').innerText = 'python development'
+    document.querySelector('section.projetos .menu-projetos .blocos .bloco-wb').innerText = 'web programing'
+   
+    // tradução habilidades
+    document.querySelector('section.habilidades > h2').innerText = 'my skills'
+    document.querySelector('section.habilidades > p').innerText = `I have skills to work with data extraction, cleaning and analysis, using programming (python) or spreadsheets. I also have advanced knowledge in UI design (prototyping, dataviz, etc.) and I'm starting in front-end development.`
+
+}
+
+
 // script
 let buttonsProjetos = document.querySelectorAll('.menu-projetos .blocos > p.button')
 
