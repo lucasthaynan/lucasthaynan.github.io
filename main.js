@@ -35,10 +35,43 @@ function traduzirSiteIngles () {
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-jd').innerText = 'data journalism'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-py').innerText = 'python development'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-wb').innerText = 'web programing'
+
+    // litrometro
+    document.querySelector('.litrometro h3').innerText = 'Fuel price monitor in Maceió'
+    document.querySelector('.litrometro > p').innerText = 'The Litrômetro is a tool that daily monitors the price of various types of fuel in the capital of Alagoas'
+
+    // quiz google
+    document.querySelector('.quiz-google h3').innerText = 'Google Trends Quiz'
+    document.querySelector('.quiz-google > p').innerText = 'The game allows you to test your knowledge of the main search terms on Google in 2021'
+
+    // bolsanews
+    document.querySelector('.bolsanews h3').innerText = 'BolsaNews, the best friend of your investments'
+    document.querySelector('.bolsanews > p').innerText = `The project is a newsletter that is automatically sent, every day, with personalized information about each user's stock portfolio`
+
+    // abastece maceio
+    document.querySelector('.abastece-maceio h3').innerText = 'Fuel price app'
+    document.querySelector('.abastece-maceio > p').innerText = 'The Abastece Maceió app provides the user, in real time, with the price of fuel in the capital of Alagoas'
+
+    // game elon musk
+    document.querySelector('.elon-musk h3').innerText = `Game - Spend Elon Musk's fortune`
+    document.querySelector('.elon-musk > p').innerText = 'Interactive tool where the user has the mission to spend the money of the richest man in the world'
+
+    // materia evolucao covid
+    document.querySelector('.evolucao-covid h3').innerText = 'Evolution of vaccination against Covid-19 in Alagoas'
+    document.querySelector('.evolucao-covid > p').innerText = 'Survey shows pace of immunization of the 1st, 2nd and single dose in the state. The analyzes were performed in Python'
+
    
     // tradução habilidades
     document.querySelector('section.habilidades > h2').innerText = 'my skills'
     document.querySelector('section.habilidades > p').innerText = `I have skills to work with data extraction, cleaning and analysis, using programming (python) or spreadsheets. I also have advanced knowledge in UI design (prototyping, dataviz, etc.) and I'm starting in front-end development.`
+
+    document.querySelector('section.habilidades .textos-indice > h3').innerText = 'comfort index'
+    document.querySelector('section.habilidades .textos-indice > p').innerText = 'The more circles filled in, the more comfortable I feel working with the technology/tool.'
+    document.querySelector('section.habilidades .pouco-confortavel > p').innerText = 'uncomfortable'
+    document.querySelector('section.habilidades .muito-confortavel > p').innerText = 'very comfortable'
+
+    // tradução contato 
+    document.querySelector('section.contato p.texto-contato').innerText = 'To talk to me, just write to the email below or get in touch through my social networks.'
 
 }
 
