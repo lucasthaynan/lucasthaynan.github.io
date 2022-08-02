@@ -123,6 +123,10 @@ div.traducao .barra {
     font-weight: 300;
 }
 
+div.traducao .versao-portugues {
+    color: #000000;
+}
+
 div.traducao .versao-ingles,
 div.traducao .versao-portugues {
     cursor: pointer;

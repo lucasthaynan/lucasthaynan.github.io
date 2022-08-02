@@ -5,6 +5,7 @@ let btnPortugues = document.querySelector('.versao-portugues')
 btnIngles.addEventListener('click', () => {
     // btnIngles.style.fontWeight = '600'
     btnIngles.style.color = '#000000'
+    btnPortugues.style.color = '#bbbbbb'
     traduzirSiteIngles ()
 })
 
@@ -33,7 +34,7 @@ function traduzirSiteIngles () {
 
 
     // tradução do sobre
-    document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 5 years of experience in data journalism . In addition, I am an interface designer , Python developer and web programmer (initial phase). I have a degree in Journalism from the Federal University of Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
+    document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 5 years of experience in data journalism . In addition, I am an interface designer , Python developer and web programmer (initial phase). I have a degree in Universidade Federal de Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
 
     document.querySelector('.sobre .texto .paragrafo2').innerText = 'In 2017, I founded the startup Agência Tatu, which develops journalistic products based on public data with a focus on the context of the Northeast region. I won awards with reports and projects aimed at exploring and visualizing data and other photojournalism projects.'
 
@@ -42,6 +43,10 @@ function traduzirSiteIngles () {
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-jd').innerText = 'data journalism'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-py').innerText = 'python development'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-wb').innerText = 'web programing'
+
+    // voo dos meis
+    document.querySelector('.voo-meis h3').innerText = `The flight of "MEIs" in the state of Alagoas`
+    document.querySelector('.voo-meis > p').innerText = 'Special report on the evolution in the number of Individual Microentrepreneurs in the state of Alagoas'
 
     // litrometro
     document.querySelector('.litrometro h3').innerText = 'Fuel price monitor in Maceió'
