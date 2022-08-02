@@ -34,7 +34,7 @@ function traduzirSiteIngles () {
 
 
     // tradução do sobre
-    document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 5 years of experience in data journalism . In addition, I am an interface designer , Python developer and web programmer (initial phase). I have a degree in Universidade Federal de Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
+    document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 5 years of experience in data journalism. In addition, I am an interface designer, Python developer and web programmer (initial phase). I have a degree in Universidade Federal de Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
 
     document.querySelector('.sobre .texto .paragrafo2').innerText = 'In 2017, I founded the startup Agência Tatu, which develops journalistic products based on public data with a focus on the context of the Northeast region. I won awards with reports and projects aimed at exploring and visualizing data and other photojournalism projects.'
 
