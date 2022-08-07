@@ -174,3 +174,27 @@ function clarearBotoes () {
         botao.style.opacity = 0.5        
     })
 }
+
+
+let menuMobile = document.getElementById('checkbox-menu')
+
+menuMobile.addEventListener('click', e =>{
+    if (menuMobile.checked == true) {
+        console.log('ativo')
+
+
+        document.querySelectorAll('nav.menu-topo > a').forEach(item => {
+            item.style.display = 'block'
+        })
+        document.querySelector('div.traducao').style.display = 'flex'
+        document.querySelector('div.linha-menu-topo').style.display = 'flex'
+
+    } else {
+        document.querySelectorAll('nav.menu-topo > a').forEach(item => {
+            item.style.display = 'none'
+        })
+        document.querySelector('div.traducao').style.display = 'none'
+        document.querySelector('div.linha-menu-topo').style.display = 'none'
+        console.log('desativo')
+    }
+})

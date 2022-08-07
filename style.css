@@ -80,7 +80,8 @@ nav.menu-topo {
     max-width: 900px;
 
     font-weight: 600;
-    font-size: 1.3em;    
+    font-size: 1.3em;  
+    transition: 0.9s;  
 }
 
 div.linha-menu-topo {
@@ -748,6 +749,29 @@ section.contato .linha-sobre {
         align-items: flex-start;
         gap: 30px;
     }
+
+    nav.menu-topo {
+        display: block;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 1.5rem;
+    }
+
+    nav.menu-topo > a, 
+    div.traducao,
+    div.linha-menu-topo {
+        display: none;
+    }
+
+    
+
+    div.container-menu-mobile {        
+        display: block;
+      }
+
+   
 }
 
 
@@ -807,9 +831,6 @@ section.contato .linha-sobre {
         width: 80vw;
     }
 
-    nav.menu-topo {
-        display: none;
-    }
 
     section.apresentacao {
         flex-direction: column;
@@ -932,3 +953,64 @@ section.contato .linha-sobre {
     
 
 }
+
+/* MENU HAMBURGUER MOBILE */
+
+.container-menu-mobile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    display: none;
+  }
+  
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    background: var(--cinza-escuro);
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+
+label span:nth-child(2){
+    top: 8px;
+}
+
+label span:nth-child(3){
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top:8px;
+}
+
+  /* -- FIM MENU HAMBUERGUER -- */
