@@ -678,7 +678,7 @@ section.contato .linha-sobre {
 @media (max-width: 830px) {
 
     nav.menu-topo {
-        margin: 30px 40px;
+        margin: 30px 25px;
     }
 
     section.apresentacao {
@@ -978,7 +978,10 @@ label{
     position: relative;
     display: block;
     height: 22px;
-    width: 30px;
+    width: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 label span{
