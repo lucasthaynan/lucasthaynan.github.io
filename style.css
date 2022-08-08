@@ -966,16 +966,17 @@ section.contato .linha-sobre {
     justify-content: flex-start;
     display: none;
 
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-	user-select: none;
-    
+    /* resolvendo bug do menu sendo selecionado e aparecendo um fundo azul */
+    -webkit-tap-highlight-color: transparent;
+
   }
   
 #checkbox-menu{
     position: absolute;
     opacity: 0;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 label{
@@ -987,6 +988,10 @@ label{
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    /* resolvendo bug do menu sendo selecionado e aparecendo um fundo azul */
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 label span{
@@ -997,6 +1002,10 @@ label span{
     border-radius: 30px;
     background: var(--cinza-escuro);
     transition: 0.25s ease-in-out;
+    
+    /* resolvendo bug do menu sendo selecionado e aparecendo um fundo azul */
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 label span:nth-child(1){
