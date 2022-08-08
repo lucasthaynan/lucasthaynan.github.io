@@ -198,3 +198,19 @@ menuMobile.addEventListener('click', e =>{
         console.log('desativo')
     }
 })
+
+
+document.querySelectorAll('nav.menu-topo > a').forEach(opcao => {
+    opcao.addEventListener('click', e => {
+
+        if (window.innerWidth <= 650) {
+            menuMobile.checked = false
+            document.querySelectorAll('nav.menu-topo > a').forEach(item => {
+                item.style.display = 'none'
+            })
+            document.querySelector('div.traducao').style.display = 'none'
+            document.querySelector('div.linha-menu-topo').style.display = 'none'
+        }
+        
+    })
+})

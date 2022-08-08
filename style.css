@@ -81,7 +81,7 @@ nav.menu-topo {
 
     font-weight: 600;
     font-size: 1.3em;  
-    transition: 0.9s;  
+    
 }
 
 div.linha-menu-topo {
@@ -749,6 +749,9 @@ section.contato .linha-sobre {
         align-items: flex-start;
         gap: 30px;
     }
+    header {
+        position: absolute;
+    }
 
     nav.menu-topo {
         display: block;
@@ -962,6 +965,7 @@ section.contato .linha-sobre {
     align-items: center;
     justify-content: flex-start;
     display: none;
+    
   }
   
 #checkbox-menu{
