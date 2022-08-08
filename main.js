@@ -102,7 +102,7 @@ buttonsProjetos.forEach(botao => {
         botao.style.opacity = 1
         botao.style.fontWeight = '400'
 
-        console.log(botao.classList[0])        
+        // console.log(botao.classList[0])        
         projetos(botao)
 
     })
@@ -115,7 +115,7 @@ function projetos(botao) {
     // pegando todos os container dos projetos
     let containerProjetos = document.querySelectorAll('.projetos > .container')
 
-    console.log(containerProjetos)
+    // console.log(containerProjetos)
 
     // para cada projeto gera essa função
     containerProjetos.forEach(projeto => {
@@ -180,7 +180,7 @@ let menuMobile = document.getElementById('checkbox-menu')
 
 menuMobile.addEventListener('click', e =>{
     if (menuMobile.checked == true) {
-        console.log('ativo')
+        // console.log('ativo')
 
 
         document.querySelectorAll('nav.menu-topo > a').forEach(item => {
@@ -195,7 +195,7 @@ menuMobile.addEventListener('click', e =>{
         })
         document.querySelector('div.traducao').style.display = 'none'
         document.querySelector('div.linha-menu-topo').style.display = 'none'
-        console.log('desativo')
+        // console.log('desativo')
     }
 })
 

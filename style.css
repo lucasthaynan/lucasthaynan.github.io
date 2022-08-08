@@ -965,6 +965,11 @@ section.contato .linha-sobre {
     align-items: center;
     justify-content: flex-start;
     display: none;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
     
   }
   
