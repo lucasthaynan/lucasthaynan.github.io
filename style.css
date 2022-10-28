@@ -662,12 +662,24 @@ section.contato div.redes {
     margin-bottom: 60px;
 }
 
+
 section.contato div.redes > a {
     font-weight: 600;
     font-size: 1.2rem;
     color: black;
     text-decoration: underline;    
 }
+
+div.texto .paragrafo3 a{
+    max-width: 750px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 130%;
+    color: black;
+    text-decoration: underline;    
+}
+
 
 section.contato .linha-sobre {
     margin-bottom: 120px;

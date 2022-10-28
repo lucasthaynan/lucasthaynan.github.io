@@ -34,9 +34,11 @@ function traduzirSiteIngles () {
 
 
     // tradução do sobre
-    document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 5 years of experience in data journalism. In addition, I am an interface designer, Python developer and web programmer (initial phase). I have a degree in Universidade Federal de Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
+    document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 6 years of experience in data journalism. In addition, I am an interface designer, Python developer and web programmer (initial phase). I have a degree in Universidade Federal de Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
 
     document.querySelector('.sobre .texto .paragrafo2').innerText = 'In 2017, I founded the startup Agência Tatu, which develops journalistic products based on public data with a focus on the context of the Northeast region. I won awards with reports and projects aimed at exploring and visualizing data and other photojournalism projects.'
+
+    document.querySelector('.sobre .texto .paragrafo3').innerHTML = `🏅 Finalist in the Cláudio Weber Abramo Prize for Data Journalism with the report <a href="https://escoladedados.org/conheca-os-finalistas-da-quarta-edicao-do-premio-claudio-weber-abramo-de-jornalismo-de-dados/" target="_blank" >The flight of "MEIs"</a>, in the Visualization category.`
 
     // tradução dos projetos
     document.querySelector('section.projetos > h2').innerText = 'my projects'
@@ -47,6 +49,11 @@ function traduzirSiteIngles () {
     // voo dos meis
     document.querySelector('.voo-meis h3').innerText = `The flight of "MEIs" in the state of Alagoas`
     document.querySelector('.voo-meis > p').innerText = 'Special report on the evolution in the number of Individual Microentrepreneurs in the state of Alagoas'
+
+    // desempenho pt
+    document.querySelector('.desempenho-pt h3').innerText = `PT's performance in the presidential elections`
+    document.querySelector('.desempenho-pt > p').innerText = 'Platform developed for Valor Econômico that compares the results of PT political party candidates in elections since 1989'
+
 
     // litrometro
     document.querySelector('.litrometro h3').innerText = 'Fuel price monitor in Maceió'
