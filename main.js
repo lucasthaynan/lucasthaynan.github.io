@@ -36,7 +36,7 @@ function traduzirSiteIngles () {
     // tradução do sobre
     document.querySelector('.sobre .texto .paragrafo1').innerText = 'I have 6 years of experience in data journalism. In addition, I am an interface designer, Python developer and web programmer (initial phase). I have a degree in Universidade Federal de Alagoas (Ufal) and I have a postgraduate degree in Data Journalism, Automation and Data Storytelling, from Insper.'
 
-    document.querySelector('.sobre .texto .paragrafo2').innerText = 'In 2017, I founded the startup Agência Tatu, which develops journalistic products based on public data with a focus on the context of the Northeast region. I won awards with reports and projects aimed at exploring and visualizing data and other photojournalism projects.'
+    document.querySelector('.sobre .texto .paragrafo2').innerText = 'In 2017, I founded the startup Agência Tatu, which develops journalistic products based on public data with a focus on the context of the Northeast region. I won awards with reports and projects aimed at exploring and visualizing data and other photojournalism projects. Today, he also works in the Arts section of the newspaper Estadão, focusing on the production of visual reports based on data.'
 
     document.querySelector('.sobre .texto .paragrafo3').innerHTML = `🏅 Finalist in the Cláudio Weber Abramo Prize for Data Journalism with the report <a href="https://escoladedados.org/conheca-os-finalistas-da-quarta-edicao-do-premio-claudio-weber-abramo-de-jornalismo-de-dados/" target="_blank" >The flight of "MEIs"</a>, in the Visualization category.`
 
@@ -45,6 +45,14 @@ function traduzirSiteIngles () {
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-jd').innerText = 'data journalism'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-py').innerText = 'python development'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-wb').innerText = 'web programing'
+
+    // rota mais segura
+    document.querySelector('.rota-mais-segura h3').innerText = `Rota +Segura`
+    document.querySelector('.rota-mais-segura > p').innerText = 'Platform developed for Estadão that allows tracing the routes with fewer vehicle robberies and thefts in São Paulo capital'
+
+    // bbb23 e IA
+    document.querySelector('.bbb23 h3').innerText = `AI reveals who appeared most on BBB23`
+    document.querySelector('.bbb23 > p').innerText = 'Report using Artificial Intelligence and deep learning models maps the screen time of reality show participants'
 
     // voo dos meis
     document.querySelector('.voo-meis h3').innerText = `The flight of "MEIs" in the state of Alagoas`

@@ -153,7 +153,7 @@ section.apresentacao .nome > p {
 div.nome {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 66px;
     align-items: flex-end;
 }
 
@@ -247,8 +247,8 @@ section.habilidades > p {
     max-width: 750px;
     margin-bottom: 30px;    
     font-weight: 300;
-    font-size: 1.3rem;
-    line-height: 130%;
+    font-size: 1.2rem;
+    line-height: 33px;
     /* text-align: center; */
 }
 
@@ -379,7 +379,7 @@ section.projetos div.lista-projetos .projetos > .container {
 
 section.projetos div.lista-projetos .projetos .container > .imagem {
     max-width: 250px;
-    height: 270px;
+    height: 265px;
     overflow: hidden; 
 
     display: flex;
@@ -412,13 +412,14 @@ section.projetos div.lista-projetos .projetos .container .blocos {
 }
 
 section.projetos div.lista-projetos .projetos .container h3 {
-    font-size: 1.6rem;
-    line-height: 1.7rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: 500;
 }
 
 section.projetos div.lista-projetos .projetos .container p {
-    font-size: 1rem;
-    line-height: 1.1rem;
+    font-size: 0.95rem;
+    line-height: 1.35rem;
 }
 
 section.projetos div.lista-projetos .projetos .container .infos-projeto .blocos .icone {
@@ -645,7 +646,9 @@ section.contato {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px 0px;
 }
+
 section.contato p.texto-contato {
     margin-top: 120px;
     text-align: center;
@@ -674,8 +677,8 @@ div.texto .paragrafo3 a{
     max-width: 750px;
     margin-bottom: 30px;
     font-weight: 300;
-    font-size: 1.3rem;
-    line-height: 130%;
+    font-size: 1.2rem;
+    line-height: 33px;
     color: black;
     text-decoration: underline;    
 }
@@ -855,6 +858,7 @@ section.contato .linha-sobre {
 
     div.nome {
         align-items: flex-start;
+        gap: 50px;
     }
 
     section.apresentacao div.nome > p {
@@ -869,8 +873,13 @@ section.contato .linha-sobre {
     section.contato > p, 
     section.sobre .texto > p, 
     section.habilidades > p {
-        font-size: 1.1rem;
-        line-height: 1.55rem;
+        font-size: 1.05rem;
+        line-height: 1.7rem;
+    }
+
+    div.texto .paragrafo3 a {
+        font-size: 1.05rem;
+        line-height: 1.7rem;
     }
 
     h2 {
@@ -880,6 +889,11 @@ section.contato .linha-sobre {
 
     section.projetos {
         max-width: auto;
+        align-items: center;
+    }
+
+    section.projetos .menu-projetos {
+        width: 326px;
     }
 
     section.projetos div.lista-projetos .projetos {
@@ -921,7 +935,8 @@ section.contato .linha-sobre {
 
     section.projetos div.lista-projetos .projetos > .container {
         flex-direction: column;
-        height: 430px;
+        height: auto;
+        margin: 2px 0px;
     }
 
     .imagem a > img {
@@ -959,6 +974,7 @@ section.contato .linha-sobre {
 
     section.projetos div.lista-projetos .projetos .container > .imagem {
         max-width: 290px;
+        height: 210px;
     }
 
     section.contato p.texto-contato {
