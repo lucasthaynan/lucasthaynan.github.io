@@ -38,13 +38,23 @@ function traduzirSiteIngles () {
 
     document.querySelector('.sobre .texto .paragrafo2').innerText = 'In 2017, I founded the startup Agência Tatu, which develops journalistic products based on public data with a focus on the context of the Northeast region. I won awards with reports and projects aimed at exploring and visualizing data and other photojournalism projects. Today, he also works in the Arts section of the newspaper Estadão, focusing on the production of visual reports based on data.'
 
-    document.querySelector('.sobre .texto .paragrafo3').innerHTML = `🏅 Finalist in the Cláudio Weber Abramo Prize for Data Journalism with the report <a href="https://escoladedados.org/conheca-os-finalistas-da-quarta-edicao-do-premio-claudio-weber-abramo-de-jornalismo-de-dados/" target="_blank" >The flight of "MEIs"</a>, in the Visualization category.`
+    document.querySelector('.sobre .texto .paragrafo3').innerHTML = `🏅 I won the Cláudio Weber Abramo Prize for Data Journalism in 2023, in the Innovation category, with the report on <a href="https://ok.org.br/noticia/os-projetos-vencedores-da-5a-edicao-do-premio-claudio-weber-abramo-de-jornalismo-de-dados" target="_blank">AI and BBB23</a>. In 2022, I was a finalist with the report <a href="https://escoladedados.org/conheca-os-finalistas-da-quarta-edicao-do-premio-claudio-weber-abramo-de-jornalismo-de-dados/" target="_blank">The Flight of "MEIs"</a>, in the Visualization category.`;
+
 
     // tradução dos projetos
     document.querySelector('section.projetos > h2').innerText = 'my projects'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-jd').innerText = 'data journalism'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-py').innerText = 'python development'
     document.querySelector('section.projetos .menu-projetos .blocos .bloco-wb').innerText = 'web programing'
+
+    // Plataforma de apuração de votos
+    document.querySelector('.apuracao-2024 h3').innerText = 'Vote counting platform';
+    document.querySelector('.apuracao-2024 > p').innerText = 'Tool developed for Agência Tatu to monitor voting in real time for the 2024 Elections in Brazil';
+
+    // Radar da Criminalidade
+    document.querySelector('.radar-criminalidade h3').innerText = 'Crime Radar';
+    document.querySelector('.radar-criminalidade > p').innerText = 'Exclusive tool that allows you to see the number of crimes occurring near any address in São Paulo';
+
 
     // rota mais segura
     document.querySelector('.rota-mais-segura h3').innerText = `Rota +Segura`
